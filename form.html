@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+</head>
+<body style="background-color: white; text-align:center; justify-content:center; padding:20px; display:flex">
+    <div style="width: 25%; margin: 0 auto; padding: 10px; border: 1px solid black; border-radius: 10px; background-color:white;"> 
+        <form action="" method="get" style="display: flex; flex-direction:column">
+        <label>Nama:<input type="text" name="nama" placeholder=""></label>
+
+        <label>Email:<input type="text" name="email" placeholder=""></label>
+ 
+    <label>Jenis Kelamin: 
+        <label><input type="radio" name="gender" value="male">Laki-Laki</label>
+        <label><input type="radio" name="gender" value="female">Perempuan</label>
+    </label>
+    <label>
+        Hobi
+        <label><input type="checkbox" name="hobi" value="music">Music</label>
+        <label><input type="checkbox" name="hobi" value="Olahraga">Olahraga</label>
+    </label>
+</form>
+<label>Pilih Kota
+    <select name="Pilihan">
+    <option value="1">Kota Bekasi</option>
+    <option value="2">Jakarta</option>
+</label>
+</select>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <label for="file">Pilih File:</label>
+    <input type="file" id="file" name="'file">
+</form>
+<a href="lamaran.html">
+    <button type="submit">Submit</button>
+</a>
+</div>
+   
+
+</body>
+</html>
