@@ -35,7 +35,7 @@ nav ul li a{
     justify-content: space-between;
     padding: 20px;
 }
-content{
+.content{
     flex: 2;
     padding: 20px;
     background-color: #ECF0F1;
@@ -62,9 +62,10 @@ form{
 label{
     margin-top: 10px;
     font-weight: bold;
+    display:block;
 }
 input, select, textarea{
-    width: 1000px;
+    width: 100%;
     padding:8px;
     margin-top: 5px;
     border:1px solid #ccc;
@@ -89,4 +90,8 @@ textarea{
 .btn.hover{
     background-color:  #2980B9;
     transform: scale(1.1);
+}
+.separator{
+    border-bottom: 2px solid #ccc;
+    margin: 15px 0;
 }
