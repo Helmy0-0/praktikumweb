@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web Singaperbangsa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Website Singaperbangsa</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Layanan</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section class="content">
+            <h2>Formulir Pendaftaran</h2>
+            <p>Silahkan Isi Formulir Dibawah Ini Untuk Mendaftar.</p>
+            <form>
+                <label>Nama Lengkap:</label>
+                <input type="text" name="nama" placeholder="Nama Lengkap">
+
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="Email">
+
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="Password">
+
+                <label>Jenis Kelamin:</label>
+                <input type="radio" name="gender" value="male">Laki-Laki
+                <input type="radio" name="gender" value="female">Perempuan  
+                
+
+                <label>Hobi</label>
+                <input type="checkbox" name="hobi" value="music"><input>Music
+                <input type="checkbox" name="hobi" value="olahraga"><input>Olahraga
+                <input type="checkbox" name="hobi" value="membaca"><input>Membaca
+            
+
+                <label>Pilih Kota:</label>
+                <select name="kota">
+                    <option value="1">Jakarta</option>
+                    <option value="2">Bekasi</option>
+                    <option value="3">Bandung</option>
+                    <option value="4">Surabaya</option>
+                </select>
+
+                <label>Pesan Tambahan:</label>
+                <textarea name="pesan" placeholder="Tulis Pesan Disini..."></textarea>
+
+                <button class="btn">Kirim</button>
+            </form>
+        </section>  
+        
+        <aside class="sidebar">
+            <h2>Sidebar</h2>
+            <p>Bagian sidebar dapat berisi tautan, iklan, atau informasi tambahan</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy;2024 Halaman Web Singaperbangsa. Dibuat dengan CSS.</p>
+    </footer>
+</body>
+</html>
