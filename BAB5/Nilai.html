@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cek Nilai</title>
+</head>
+<body style="padding: 20px;">
+    <div style="text-align:center; padding:20px; background-color:wheat; border-radius:20px">
+        <h1>Cek Nilai</h1>
+        <div>
+            <label>NIM: <input type="Nim" id="nim"></label>
+            <br>
+            <label>Nilai: <input type="number" id="num"></label>
+        </div>
+        <br>
+        <button onclick="Cek()">Cek</button> 
+            <p>Hasil: <span id="hasil">Apa Yah</span></p>
+    </div>
+    
+    
+    <script>
+        function Cek(){
+            let num=document.getElementById('num').value;
+            if (num > 100){
+                document.getElementById('hasil').innerHTML='Nilai Tidak Valid';
+            } else if (num >= 80) {
+                document.getElementById('hasil').innerHTML='A';
+            } else if (num >= 70) {
+                document.getElementById('hasil').innerHTML='B';
+            } else if (num >= 60) {
+                document.getElementById('hasil').innerHTML='C';
+            } else if (num >= 50) {
+                document.getElementById('hasil').innerHTML='D';
+            } else if (num >= 0) {
+                document.getElementById('hasil').innerHTML='E';
+            } else{
+                document.getElementById('hasil').innerHTML='Nilai Tidak Valid';
+            }
+        }
+    </script>
+</body>
+</html>
