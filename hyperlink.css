@@ -1,87 +1,56 @@
-/* Reset dasar */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Gaya dasar body */
+/* Body Styling */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #f3f4f6, #e0f7fa);
-    color: #333;
-    padding: 40px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fa;
+    padding: 20px;
 }
 
-/* Judul utama */
+/* Title */
 h1 {
     text-align: center;
-    font-size: 2.5em;
-    color: #0077b6;
     margin-bottom: 30px;
+    color: #333;
 }
 
-/* Container konten */
-div {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #ffffffcc;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-/* Subjudul */
+/* Section Title */
 h2 {
-    color: #023e8a;
-    margin-top: 20px;
-    font-size: 1.5em;
-    text-align: center;
-}
-
-/* Container untuk tombol-tombol agar rata tengah */
-div a {
+    color: #2c3e50;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3498db;
     display: inline-block;
-    margin: 8px;
-    padding: 10px 20px;
-    color: #ffffff;
-    background-color: #00b4d8;
+    padding-bottom: 5px;
+}
+
+/* Praktikum and Progres Container */
+.prak, .prog {
+    display: flex;
+    justify-content: center;    
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Link Styling */
+a {
     text-decoration: none;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    text-align: center;
-}
-
-/* Pusatkan tombol */
-div {
-    text-align: center;
-}
-
-/* Efek hover */
-div a:hover {
-    background-color: #0077b6;
-    transform: scale(1.05);
-}
-
-/* Bagian paragraf link bawah */
-p {
-    text-align: center;
-    margin-top: 40px;
-}
-
-p a {
-    margin: 6px;
-    padding: 8px 16px;
-    background-color: #90e0ef;
-    color: #003566;
+    color: #fff;
+    background-color: #3498db;
+    padding: 10px 15px;
     border-radius: 6px;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
-p a:hover {
-    background-color: #00b4d8;
-    color: white;
-    transform: scale(1.05);
+a:hover {
+    background-color: #2980b9;
 }
